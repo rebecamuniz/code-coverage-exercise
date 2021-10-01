@@ -11,6 +11,16 @@ def test_init():
     assert ada.level == level
     assert ada.courses == courses
 
+def test_student_has_no_course():
+    name ="Rebeca Sophia"
+    level = "amazing"
+    
+    us = Student(name,level)
+
+    assert us.name == "Rebeca Sophia"
+    assert us.level == "amazing"
+    assert us.courses == []
+
 def test_add_class():
     new_class = 'Intro to Feminism'
     charles = Student("Charles Babbage", "senior", ["mechanical engineering"])
