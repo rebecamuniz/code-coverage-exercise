@@ -50,5 +50,7 @@ def test_get_student_with_more_classes():
         "sophomore",
         ["mathematics", "foundations of computing"]
     )
-
-    # TODO: write assertions
+    student = get_student_with_more_classes(charles,ada)
+    student2 = get_student_with_more_classes(ada,charles)
+    assert student == ada
+    assert student2 == ada
